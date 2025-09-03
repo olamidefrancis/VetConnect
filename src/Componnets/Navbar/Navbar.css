@@ -1,0 +1,119 @@
+.flexy{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__navbar
+{   width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+.main__navbar--content{
+     display: flex;
+     justify-content: space-between;
+     background-color: #0f172a;
+     width: 100%;
+     height: fit-content;
+     font-size: 1.8rem;
+     padding: 1.3rem;
+}
+
+.main__navbar--content figure{
+    /* background-color: red; */
+    object-fit: cover;
+}
+.main__navbar--content figure img{
+    width: 30px;
+    height: 30px;
+}
+.main__navbar--content--linkcon{
+    column-gap: 2rem;
+}
+
+.main__navbar--content--logandreg{
+    /* background-color: greenyellow; */
+    column-gap: 1.5rem;
+}
+
+.main__navbar--content a{
+    color:white;
+    text-decoration: none;
+
+}
+
+@media screen and (max-width: 500px){
+  
+    .main__navbar--content--linkcon{
+       
+        position:fixed;
+        flex-direction: column;
+        z-index: 10;
+        row-gap: 3rem;
+        position: fixed;
+        height: 100vh;
+        align-items: flex-start;
+        justify-content: flex-start;
+        top:0;
+        left:0;
+        padding: 2rem;
+        padding-top: 6rem;
+        background: rgba(81, 126, 199, 0.3) ;
+        width: 40%;
+        transition: all 0.3s ease-in-out;
+        transform: translateX(-100rem);
+    }
+    .main__navbar--content--linkcon a{
+      color: red;
+    }
+
+    .restore{
+          transform: translateX(0);
+    }
+
+    .humburgers{
+        position: fixed;
+        top: 1rem;
+        right: 3rem;
+        width:7rem;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        z-index: 11;
+        background-color: rgba(81, 126, 199);
+    }
+    .line1{
+        width:70%;
+        height: 0.2rem;
+        background-color: white;
+        transition: all 0.3s ease-in-out;
+        align-self: flex-end;
+    }
+
+    .line2{
+        width:100%;
+        height: 2px;
+        background-color: white;
+        transition: all 0.3s ease-in-out;
+        align-self: center;
+    }
+
+    .line1-toggled{
+        transform: rotate(45deg) translateX(-0.5rem) translateY(1.5rem);
+        width:50%;
+    }
+
+    .line2-toggled{
+        transform: rotate(-40deg) translateX(0.4rem) translateY(-0.4rem);
+        width:50%;
+    }
+}
+    
