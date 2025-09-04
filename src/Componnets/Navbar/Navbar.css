@@ -8,7 +8,8 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    
+    position: relative;
+    z-index: 100;
 }
 
 
@@ -16,7 +17,7 @@
 .main__navbar--content{
      display: flex;
      justify-content: space-between;
-     background-color: #0f172a;
+     /* background-color: #0f172a; */
      width: 100%;
      height: fit-content;
      font-size: 1.8rem;
@@ -32,7 +33,7 @@
     height: 30px;
 }
 .main__navbar--content--linkcon{
-    column-gap: 2rem;
+    column-gap: 4rem;
 }
 
 .main__navbar--content--logandreg{
@@ -43,32 +44,39 @@
 .main__navbar--content a{
     color:white;
     text-decoration: none;
-
+    transition: all 0.1s ease-in-out;
 }
+
+.main__navbar--content a:hover{
+    background-color: rgba(81, 126, 199, 0.3);
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 0.3rem;
+}
+
 
 @media screen and (max-width: 500px){
   
     .main__navbar--content--linkcon{
-       
+        display: flex;
         position:fixed;
         flex-direction: column;
         z-index: 10;
-        row-gap: 3rem;
+        row-gap: 2rem;
         position: fixed;
         height: 100vh;
         align-items: flex-start;
-        justify-content: flex-start;
+        justify-items: flex-start;
         top:0;
         left:0;
         padding: 2rem;
-        padding-top: 6rem;
         background: rgba(81, 126, 199, 0.3) ;
         width: 40%;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.2s ease-in-out;
         transform: translateX(-100rem);
     }
     .main__navbar--content--linkcon a{
-      color: red;
+      color: white;
     }
 
     .restore{
@@ -115,5 +123,12 @@
         transform: rotate(-40deg) translateX(0.4rem) translateY(-0.4rem);
         width:50%;
     }
+
+    .main__navbar--content a:hover{
+    background-color: rgba(81, 126, 199, 0.3);
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 0.3rem;
+  }
 }
     

@@ -9,7 +9,7 @@
 
 :root {
   font-size: 62.5%;
- 
+ --backgroundmain:  rgb(54, 54, 235);
 }
 
 body{
