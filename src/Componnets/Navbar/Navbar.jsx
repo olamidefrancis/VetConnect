@@ -29,7 +29,7 @@ function Navbar() {
                     <img src={paw} alt="logo" />
                 </figure>
 
-                <div className="main__navbar--content--linkcon flexy">
+                <div className="main__navbar--content--linkcon ">
                     <Link to='/Home' className='main__navbar--content--linkcon--home'>
                         Home
                     </Link>

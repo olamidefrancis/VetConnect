@@ -5,7 +5,7 @@
 }
 
 .Hero__con{
-    height: 75vh;
+    height: 65vh;
     width: 100%;
     top:-50px;
     position: absolute;
@@ -19,6 +19,40 @@ background-image: url('../../assets/Images/anastasiya-badun-B3XGqSdvWes-unsplash
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center; 
-
+position: relative;
 }
 
+.Hero__con-imgcon-subcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    position: absolute;
+    width: fit-content;
+    height: 40%;
+    top:50%;
+    left:10%;
+    color: white;
+    row-gap: 1rem;
+}
+
+.Hero__con-imgcon-subcon h1, h2{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Hero__con-imgcon-subcon h2{
+    padding-bottom: 0.5rem;
+}
+
+.Hero__con-imgcon-subcon a{
+    outline: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(35, 90, 179, 0.7);
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: fit-content;
+}
